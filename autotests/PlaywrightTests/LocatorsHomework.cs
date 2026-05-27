@@ -41,7 +41,7 @@ namespace PlaywrightTests
             var emailInput = page.Locator("form[data-tid='FWForm'] input[type='email']");
 
             // Локатор ошибки, если ввели неверный Email
-            var emailInputValidationError = page.Locator("form[data-tid='FWForm'] [data-fw-component-type='email'] [class='field-validation-valid']");
+            var emailInputValidationError = page.Locator("form[data-tid='FWForm'] [data-fw-component-type='email'] [class='field-validation-error']");
 
             // Поле ввода Телефона
             var phoneInput = page.Locator("form[data-tid='FWForm'] [data-fw-component-type='phone'] input");
@@ -62,7 +62,7 @@ namespace PlaywrightTests
             var fileNameLabel = page.Locator("form[data-tid='FWForm'] [data-fw-component-type='fileuploader'] [class='file-loader__filename-wrap']");
 
             // Чекбокс Связаться в определённый день
-            var customDayCheckbox = page.Locator("form[data-tid='FWForm'] [data-fw-component-type='checkbox'] input[type='checkbox']");
+            var customDayCheckbox = page.Locator("form[data-tid='FWForm'] [data-fw-component-type='checkbox'] label");
 
             // Поле ввода Даты
             var datePicker = page.Locator("form[data-tid='FWForm'] [data-fw-component-type='datepicker'] input[data-role='local-date']");
